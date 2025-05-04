@@ -74,7 +74,6 @@ else
     # Você pode adicionar aqui um comando para enviar um alerta (email, etc.)
 fi
 
-# A limpeza será feita pelo script de limpeza ou pelo script full
-# para evitar concorrência ou deleções acidentais no meio de uma cadeia incremental.
+# A limpeza será feita pelo script de limpeza ou pelo script full para evitar concorrência ou deleções acidentais no meio de uma cadeia incremental.
 
 exit $EXIT_STATUS # Sai com o código de saída do xtrabackup

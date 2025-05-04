@@ -57,5 +57,4 @@ fi
 #find "$BACKUP_BASE_DIR" -maxdepth 2 -type d \( -name "FULL-*" -o -name "INC-*" \) -mtime +7 -exec echo "Removendo {}" \; -exec rm -rf {} \; >> "$LOG_FILE" 2>&1
 #echo "--- Limpeza Concluida em $(date) ---" | tee -a "$LOG_FILE"
 
-
 exit $EXIT_STATUS # Sai com o código de saída do xtrabackup

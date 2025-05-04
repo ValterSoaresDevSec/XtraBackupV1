@@ -16,4 +16,4 @@
 # 0 1 * * * /opt/scripts/backup_cleanup.sh
 
 # Opcional: Onde enviar os logs de email do cron (se MAILTO nao estiver configurado globalmente)
-# MAILTO="noc@itstransdata.com"
+# MAILTO="dmonitor@teste.com"
