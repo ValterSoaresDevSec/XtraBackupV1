@@ -1,0 +1,19 @@
+# --- Backup Full (Sexta-feira, 00:10 BRT) ---
+# M H Dom Mes DiaSem Comando
+# 10 0 * * 5 /opt/scripts/backup_full.sh
+
+# --- Backups Incrementais (De hora em hora, exceto Sex 00h) ---
+# Incremental de Sabado (Dia 6) a Quinta (Dia 4) - todas as horas
+# M H Dom Mes DiaSem Comando
+# 0 * * * 6-4 /opt/scripts/backup_incremental.sh
+
+# Incremental de Sexta (Dia 5) - das 01:00h as 23:00h (apos o full)
+# M H Dom Mes DiaSem Comando
+# 0 1-23 * * 5 /opt/scripts/backup_incremental.sh
+
+# --- Limpeza (Opcional - Diariamente as 01:00) ---
+# M H Dom Mes DiaSem Comando
+# 0 1 * * * /opt/scripts/backup_cleanup.sh
+
+# Opcional: Onde enviar os logs de email do cron (se MAILTO nao estiver configurado globalmente)
+# MAILTO="noc@itstransdata.com"
